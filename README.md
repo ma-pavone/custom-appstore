@@ -1,7 +1,3 @@
-Here's a `README.md` content for your forked Appstore repository:
-
----
-
 # My Custom Runtipi Appstore
 
 This repository is a customized fork of the **[Official Runtipi Appstore](https://github.com/runtipi/appstore)**.
