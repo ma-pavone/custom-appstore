@@ -1,5 +1,3 @@
-version: "3.9"
-
 networks:
   tipi_main_network:
     name: runtipi_tipi_main_network
