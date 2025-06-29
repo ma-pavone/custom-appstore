@@ -11,5 +11,8 @@ github.secrets
 /playwright/.cache/
 /runtipi
 app.png
-
 .cursorrules
+.env
+**/.env
+.env.*
+*.env
