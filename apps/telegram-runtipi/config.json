@@ -1,0 +1,73 @@
+{
+  "name": "Telegram Runtipi",
+  "available": true,
+  "exposable": true,
+  "port": 7777,
+  "id": "telegram-runtipi",
+  "tipi_version": 5,
+  "version": "1.0.0",
+  "categories": [
+    "utilities",
+    "automation"
+  ],
+  "description": "Um bot para controle e monitoramento de aplicativos no seu servidor Runtipi através do Telegram. Permite listar, iniciar/parar aplicativos e executar scripts remotamente.",
+  "short_desc": "Controle seu Runtipi via Telegram.",
+  "author": "ma-pavone",
+  "source": "https://github.com/ma-pavone/telegram-runtipi",
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Telegram Bot Token",
+      "name": "TELEGRAM_TOKEN",
+      "env_variable": "TELEGRAM_TOKEN",
+      "required": true,
+      "hint": "Token do seu bot gerado pelo @BotFather."
+    },
+    {
+      "type": "text",
+      "label": "Telegram Chat ID",
+      "name": "TELEGRAM_CHAT_ID",
+      "env_variable": "TELEGRAM_CHAT_ID",
+      "required": true,
+      "hint": "O ID do seu chat/usuário do Telegram para autorização."
+    },
+    {
+      "type": "text",
+      "label": "Runtipi Host URL",
+      "name": "RUNTIPI_HOST",
+      "env_variable": "RUNTIPI_HOST",
+      "required": true,
+      "default": "http://192.168.15.3:80",
+      "hint": "URL de acesso ao seu Runtipi na rede local."
+    },
+    {
+      "type": "text",
+      "label": "Runtipi Username",
+      "name": "RUNTIPI_USERNAME",
+      "env_variable": "RUNTIPI_USERNAME",
+      "required": true,
+      "hint": "Seu nome de usuário para login na Runtipi."
+    },
+    {
+      "type": "password",
+      "label": "Runtipi Password",
+      "name": "RUNTIPI_PASSWORD",
+      "env_variable": "RUNTIPI_PASSWORD",
+      "required": true,
+      "hint": "Sua senha para login na Runtipi."
+    },
+    {
+      "type": "text",
+      "label": "Caminho dos Scripts no Host",
+      "name": "SCRIPTS_PATH",
+      "env_variable": "SCRIPTS_PATH",
+      "required": false,
+      "default": "/media/data/scripts",
+      "hint": "(Opcional) Caminho absoluto no seu servidor onde os scripts a serem executados estão localizados."
+    }
+  ],
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ]
+}
